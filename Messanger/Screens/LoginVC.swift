@@ -39,7 +39,8 @@ class LoginVC: UIViewController {
     @objc private func signUpBtnClick(gesture: UITapGestureRecognizer){
         let sentenceRange = ((lblFooter.text ?? "") as NSString).range(of: "Sign Up here")
         if gesture.didTapAttributedTextInLabel(label: lblFooter, inRange: sentenceRange) {
-            print("hello")
+            let signUpVC = AppStoryboard.login.getViewController(SignupVC.self)
+            self.navigationController?.pushViewController(signUpVC, animated: true)
         }
         
     }

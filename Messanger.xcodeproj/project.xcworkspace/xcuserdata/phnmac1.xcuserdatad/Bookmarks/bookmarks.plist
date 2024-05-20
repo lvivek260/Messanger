@@ -12,13 +12,13 @@
 					<key>EndingColumnNumber</key>
 					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>42</string>
+					<string>43</string>
 					<key>StartingColumnNumber</key>
 					<string>0</string>
 					<key>StartingLineNumber</key>
 					<string>41</string>
 					<key>Timestamp</key>
-					<string>737897236.3847899</string>
+					<string>737900089.942209</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -34,7 +34,8 @@
 			<key>text-context</key>
 			<dict>
 				<key>focused</key>
-				<string>            print("hello")
+				<string>            let signUpVC = AppStoryboard.login.getViewController(SignupVC.self)
+            self.navigationController?.pushViewController(signUpVC, animated: true)
 </string>
 				<key>leading</key>
 				<string>        let sentenceRange = ((lblFooter.text ?? "") as NSString).range(of: "Sign Up here")
@@ -57,13 +58,13 @@
 					<key>EndingColumnNumber</key>
 					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>42</string>
+					<string>43</string>
 					<key>StartingColumnNumber</key>
 					<string>0</string>
 					<key>StartingLineNumber</key>
 					<string>41</string>
 					<key>Timestamp</key>
-					<string>737897236.384822</string>
+					<string>737900089.9422359</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -79,7 +80,8 @@
 			<key>text-context</key>
 			<dict>
 				<key>focused</key>
-				<string>            print("hello")
+				<string>            let signUpVC = AppStoryboard.login.getViewController(SignupVC.self)
+            self.navigationController?.pushViewController(signUpVC, animated: true)
 </string>
 				<key>leading</key>
 				<string>        let sentenceRange = ((lblFooter.text ?? "") as NSString).range(of: "Sign Up here")

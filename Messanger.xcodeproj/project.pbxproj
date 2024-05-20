@@ -15,6 +15,8 @@
 		1F0646482BFB5C7B001B1C68 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0646472BFB5C7B001B1C68 /* Login.storyboard */; };
 		1F06464A2BFB6522001B1C68 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0646492BFB6522001B1C68 /* PasswordTextField.swift */; };
 		1F06464C2BFB6A1A001B1C68 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F06464B2BFB6A1A001B1C68 /* UITapGestureRecognizer+Extension.swift */; };
+		1F06464E2BFB73E0001B1C68 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F06464D2BFB73E0001B1C68 /* SignupVC.swift */; };
+		1F0646502BFB74DD001B1C68 /* LoginNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F06464F2BFB74DD001B1C68 /* LoginNav.swift */; };
 		1FCC41782BFB56A9009C9E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC41772BFB56A9009C9E72 /* AppDelegate.swift */; };
 		1FCC417A2BFB56A9009C9E72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC41792BFB56A9009C9E72 /* SceneDelegate.swift */; };
 		1FCC417C2BFB56A9009C9E72 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC417B2BFB56A9009C9E72 /* LoginVC.swift */; };
@@ -32,6 +34,8 @@
 		1F0646472BFB5C7B001B1C68 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		1F0646492BFB6522001B1C68 /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		1F06464B2BFB6A1A001B1C68 /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
+		1F06464D2BFB73E0001B1C68 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		1F06464F2BFB74DD001B1C68 /* LoginNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNav.swift; sourceTree = "<group>"; };
 		1FCC41742BFB56A9009C9E72 /* Messanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCC41772BFB56A9009C9E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FCC41792BFB56A9009C9E72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +121,9 @@
 		1F06463B2BFB5AEF001B1C68 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1F06464F2BFB74DD001B1C68 /* LoginNav.swift */,
 				1FCC417B2BFB56A9009C9E72 /* LoginVC.swift */,
+				1F06464D2BFB73E0001B1C68 /* SignupVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -238,12 +244,14 @@
 				1F06464A2BFB6522001B1C68 /* PasswordTextField.swift in Sources */,
 				1F0646462BFB5B31001B1C68 /* ValidationManager.swift in Sources */,
 				1F06463D2BFB5B14001B1C68 /* AppStoryboard.swift in Sources */,
+				1F0646502BFB74DD001B1C68 /* LoginNav.swift in Sources */,
 				1F0646412BFB5B22001B1C68 /* Cell+Extension.swift in Sources */,
 				1FCC417C2BFB56A9009C9E72 /* LoginVC.swift in Sources */,
 				1F06464C2BFB6A1A001B1C68 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				1FCC41782BFB56A9009C9E72 /* AppDelegate.swift in Sources */,
 				1F0646402BFB5B22001B1C68 /* UIViewController+Extension.swift in Sources */,
 				1F0646452BFB5B31001B1C68 /* RestrictCharacter.swift in Sources */,
+				1F06464E2BFB73E0001B1C68 /* SignupVC.swift in Sources */,
 				1FCC417A2BFB56A9009C9E72 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +412,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,6 +441,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
