@@ -13,9 +13,9 @@ enum AppStoryboard: String{
     
     func getViewController<T: UIViewController>(_ viewController: T.Type) -> T{
         let storyboard = UIStoryboard(name: self.rawValue, bundle: nil)
-        guard let vc = storyboard.instantiateViewController(withIdentifier: String(describing: viewController)) as? T else{
+        guard let resultVC = storyboard.instantiateViewController(withIdentifier: String(describing: viewController)) as? T else{
             fatalError(String(describing: viewController) + "Not Found")
         }
-        return vc
+        return resultVC
     }
 }

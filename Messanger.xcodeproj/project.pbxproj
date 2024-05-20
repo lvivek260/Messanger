@@ -12,9 +12,12 @@
 		1F0646412BFB5B22001B1C68 /* Cell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F06463F2BFB5B22001B1C68 /* Cell+Extension.swift */; };
 		1F0646452BFB5B31001B1C68 /* RestrictCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0646422BFB5B31001B1C68 /* RestrictCharacter.swift */; };
 		1F0646462BFB5B31001B1C68 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0646432BFB5B31001B1C68 /* ValidationManager.swift */; };
+		1F0646482BFB5C7B001B1C68 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0646472BFB5C7B001B1C68 /* Login.storyboard */; };
+		1F06464A2BFB6522001B1C68 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0646492BFB6522001B1C68 /* PasswordTextField.swift */; };
+		1F06464C2BFB6A1A001B1C68 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F06464B2BFB6A1A001B1C68 /* UITapGestureRecognizer+Extension.swift */; };
 		1FCC41782BFB56A9009C9E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC41772BFB56A9009C9E72 /* AppDelegate.swift */; };
 		1FCC417A2BFB56A9009C9E72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC41792BFB56A9009C9E72 /* SceneDelegate.swift */; };
-		1FCC417C2BFB56A9009C9E72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC417B2BFB56A9009C9E72 /* ViewController.swift */; };
+		1FCC417C2BFB56A9009C9E72 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC417B2BFB56A9009C9E72 /* LoginVC.swift */; };
 		1FCC417F2BFB56A9009C9E72 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1FCC417E2BFB56A9009C9E72 /* Base */; };
 		1FCC41812BFB56AB009C9E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCC41802BFB56AB009C9E72 /* Assets.xcassets */; };
 		1FCC41842BFB56AB009C9E72 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1FCC41832BFB56AB009C9E72 /* Base */; };
@@ -26,10 +29,13 @@
 		1F06463F2BFB5B22001B1C68 /* Cell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Extension.swift"; sourceTree = "<group>"; };
 		1F0646422BFB5B31001B1C68 /* RestrictCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestrictCharacter.swift; sourceTree = "<group>"; };
 		1F0646432BFB5B31001B1C68 /* ValidationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		1F0646472BFB5C7B001B1C68 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		1F0646492BFB6522001B1C68 /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		1F06464B2BFB6A1A001B1C68 /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
 		1FCC41742BFB56A9009C9E72 /* Messanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCC41772BFB56A9009C9E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FCC41792BFB56A9009C9E72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1FCC417B2BFB56A9009C9E72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FCC417B2BFB56A9009C9E72 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		1FCC417E2BFB56A9009C9E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FCC41802BFB56AB009C9E72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FCC41832BFB56AB009C9E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +66,7 @@
 			children = (
 				1FCC417D2BFB56A9009C9E72 /* Main.storyboard */,
 				1FCC41822BFB56AB009C9E72 /* LaunchScreen.storyboard */,
+				1F0646472BFB5C7B001B1C68 /* Login.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -67,6 +74,7 @@
 		1F0646362BFB5A62001B1C68 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				1F0646492BFB6522001B1C68 /* PasswordTextField.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -90,6 +98,7 @@
 		1F0646392BFB5A81001B1C68 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1F06464B2BFB6A1A001B1C68 /* UITapGestureRecognizer+Extension.swift */,
 				1F06463F2BFB5B22001B1C68 /* Cell+Extension.swift */,
 				1F06463E2BFB5B22001B1C68 /* UIViewController+Extension.swift */,
 			);
@@ -108,7 +117,7 @@
 		1F06463B2BFB5AEF001B1C68 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				1FCC417B2BFB56A9009C9E72 /* ViewController.swift */,
+				1FCC417B2BFB56A9009C9E72 /* LoginVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -212,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0646482BFB5C7B001B1C68 /* Login.storyboard in Resources */,
 				1FCC41812BFB56AB009C9E72 /* Assets.xcassets in Resources */,
 				1FCC41842BFB56AB009C9E72 /* Base in Resources */,
 				1FCC417F2BFB56A9009C9E72 /* Base in Resources */,
@@ -225,10 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F06464A2BFB6522001B1C68 /* PasswordTextField.swift in Sources */,
 				1F0646462BFB5B31001B1C68 /* ValidationManager.swift in Sources */,
 				1F06463D2BFB5B14001B1C68 /* AppStoryboard.swift in Sources */,
 				1F0646412BFB5B22001B1C68 /* Cell+Extension.swift in Sources */,
-				1FCC417C2BFB56A9009C9E72 /* ViewController.swift in Sources */,
+				1FCC417C2BFB56A9009C9E72 /* LoginVC.swift in Sources */,
+				1F06464C2BFB6A1A001B1C68 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				1FCC41782BFB56A9009C9E72 /* AppDelegate.swift in Sources */,
 				1F0646402BFB5B22001B1C68 /* UIViewController+Extension.swift in Sources */,
 				1F0646452BFB5B31001B1C68 /* RestrictCharacter.swift in Sources */,
