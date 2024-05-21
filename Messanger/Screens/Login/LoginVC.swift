@@ -19,6 +19,10 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func didSignInBtnClick(_ sender: Any) {
+        if let window = self.getWindow(){
+            window.rootViewController = AppStoryboard.main.getViewController(TabBarController.self)
+            window.makeKeyAndVisible()
+        }
     }
     
     
@@ -30,7 +34,7 @@ class LoginVC: UIViewController {
         colorAttriString.addAttribute(.foregroundColor, value: UIColor.lightGreen, range: emailRange)
         lblFooter.attributedText = colorAttriString
        
-        //add gesture Recognizer on email
+        //add gesture Recognizer sentence
         let tapAction = UITapGestureRecognizer(target: self, action: #selector(self.signUpBtnClick(gesture:)))
         lblFooter.isUserInteractionEnabled = true
         lblFooter.addGestureRecognizer(tapAction)

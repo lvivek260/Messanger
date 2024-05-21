@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -133,15 +132,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 5 1" translatesAutoresizingMaskIntoConstraints="NO" id="GPI-EG-1rh">
-                                <rect key="frame" x="91.666666666666686" y="79" width="210" height="210"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GPI-EG-1rh">
+                                <rect key="frame" x="116.66666666666669" y="60.333333333333329" width="160" height="157.33333333333331"/>
+                                <color key="tintColor" systemColor="secondaryLabelColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="210" id="EVU-xz-cEu"/>
-                                    <constraint firstAttribute="width" constant="210" id="yBd-xu-LxY"/>
+                                    <constraint firstAttribute="height" constant="160" id="EVU-xz-cEu"/>
+                                    <constraint firstAttribute="width" constant="160" id="yBd-xu-LxY"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3MU-fh-uVM">
-                                <rect key="frame" x="20" y="339" width="353" height="325.33333333333326"/>
+                                <rect key="frame" x="20" y="269" width="353" height="325.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tAN-nP-V1q">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="69.333333333333329"/>
@@ -235,6 +235,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" name="LightGreen"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didSignUpBtnClick:" destination="GBY-P7-jmd" eventType="touchUpInside" id="bj0-sH-WdQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -249,9 +252,16 @@
                             <constraint firstItem="c6f-nt-luB" firstAttribute="bottom" secondItem="0BN-tL-vpy" secondAttribute="bottom" constant="10" id="dOW-DO-gsP"/>
                             <constraint firstItem="0BN-tL-vpy" firstAttribute="leading" secondItem="c6f-nt-luB" secondAttribute="leading" constant="20" id="g0x-kU-bwI"/>
                             <constraint firstItem="3MU-fh-uVM" firstAttribute="leading" secondItem="c6f-nt-luB" secondAttribute="leading" constant="20" id="pbF-7x-4xx"/>
-                            <constraint firstItem="GPI-EG-1rh" firstAttribute="top" secondItem="c6f-nt-luB" secondAttribute="top" constant="20" id="qWk-3a-icJ"/>
+                            <constraint firstItem="GPI-EG-1rh" firstAttribute="top" secondItem="c6f-nt-luB" secondAttribute="top" id="qWk-3a-icJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileImg" destination="GPI-EG-1rh" id="cBc-ju-ZYQ"/>
+                        <outlet property="txtEmail" destination="CGf-NC-EtZ" id="ie5-g7-uIY"/>
+                        <outlet property="txtFirstName" destination="fjm-Zp-Ujs" id="x0o-P8-zs6"/>
+                        <outlet property="txtLastName" destination="4An-s6-SEI" id="xo9-xS-HzK"/>
+                        <outlet property="txtPassword" destination="Alc-Lh-2e3" id="HOW-vy-weU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MFZ-uu-POw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -278,10 +288,13 @@
     </scenes>
     <resources>
         <image name="image 4 1" width="210" height="210"/>
-        <image name="image 5 1" width="201" height="201"/>
+        <image name="person" catalog="system" width="128" height="121"/>
         <namedColor name="LightGreen">
             <color red="0.47450980392156861" green="0.91764705882352937" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
