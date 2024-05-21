@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginVC: UIViewController {
 
@@ -20,8 +21,19 @@ class LoginVC: UIViewController {
 
     @IBAction func didSignInBtnClick(_ sender: Any) {
         if let window = self.getWindow(){
-            window.rootViewController = AppStoryboard.main.getViewController(TabBarController.self)
-            window.makeKeyAndVisible()
+            guard let email = txtEmail.text, email != "", let password = txtPassword.text, password != "" else {
+                showAlertMessage(title: "Error", message: "Please enter email and password")
+                return
+            }
+            FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password) { result, error in
+                if let result, error == nil{
+                    print(result)
+                    window.rootViewController = AppStoryboard.main.getViewController(TabBarController.self)
+                    window.makeKeyAndVisible()
+                }else{
+                    self.showAlertMessage(title: "Error", message: "Please enter email and password")
+                }
+            }
         }
     }
     
