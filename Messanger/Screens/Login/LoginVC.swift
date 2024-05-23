@@ -19,19 +19,21 @@ class LoginVC: UIViewController {
         configFooterLbl()
     }
 
-    @IBAction func didSignInBtnClick(_ sender: Any) {
+    @IBAction func didSignInBtnClick(_ sender: ActivityButton) {
         if let window = self.getWindow(){
             guard let email = txtEmail.text, email != "", let password = txtPassword.text, password != "" else {
                 showAlertMessage(title: "Error", message: "Please enter email and password")
                 return
             }
+            sender.isLoading = true
             FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password) { result, error in
                 if let result, error == nil{
-                    print(result)
+                    sender.isLoading = false
                     window.rootViewController = AppStoryboard.main.getViewController(TabBarController.self)
                     window.makeKeyAndVisible()
                 }else{
-                    self.showAlertMessage(title: "Error", message: "Please enter email and password")
+                    sender.isLoading = false
+                    self.showAlertMessage(title: "Error", message: "Please enter valid email and password")
                 }
             }
         }
