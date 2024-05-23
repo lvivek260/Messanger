@@ -69,8 +69,14 @@ class SignupVC: UIViewController{
 //MARK: - IBActions
     @IBAction func didSignUpBtnClick(_ sender: Any) {
         guard let email = txtEmail.text, let password = txtPassword.text else { return }
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            print(result as Any)
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) {[weak self] result, error in
+            if let result, error == nil{
+                self?.showAlertMessage(title: "Success", message: "SignUp successfully complete."){
+                    self?.navigationController?.popViewController(animated: true)
+                }
+            }else{
+                self?.showAlertMessage(title: "Failed", message: "Please try again")
+            }
         }
     }
     
