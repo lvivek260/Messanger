@@ -44,8 +44,8 @@ class LoginVC: UIViewController {
         let textstr = "Don’t have an acount? Sign Up here"
         lblFooter.text = textstr
         let colorAttriString = NSMutableAttributedString(string: textstr)
-        let emailRange = (textstr as NSString).range(of: "Sign Up here")
-        colorAttriString.addAttribute(.foregroundColor, value: UIColor.lightGreen, range: emailRange)
+        let range = (textstr as NSString).range(of: "Sign Up here")
+        colorAttriString.addAttribute(.foregroundColor, value: UIColor.lightGreen, range: range)
         lblFooter.attributedText = colorAttriString
        
         //add gesture Recognizer sentence

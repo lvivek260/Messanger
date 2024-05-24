@@ -56,6 +56,7 @@
 		1FCC417F2BFB56A9009C9E72 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1FCC417E2BFB56A9009C9E72 /* Base */; };
 		1FCC41812BFB56AB009C9E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCC41802BFB56AB009C9E72 /* Assets.xcassets */; };
 		1FCC41842BFB56AB009C9E72 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1FCC41832BFB56AB009C9E72 /* Base */; };
+		1FCCAE7C2C0067B400AB0A56 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCAE7B2C0067B400AB0A56 /* CustomNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		1FCC41802BFB56AB009C9E72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FCC41832BFB56AB009C9E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FCC41852BFB56AB009C9E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FCCAE7B2C0067B400AB0A56 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		3FE150E00262C312C9CFC226 /* Pods_Messanger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messanger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF7B510BE520F736F2413BE /* Pods-Messanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messanger.release.xcconfig"; path = "Target Support Files/Pods-Messanger/Pods-Messanger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +152,7 @@
 				1F894BE52BFF471300106B66 /* ActivityButton.swift */,
 				1F0646492BFB6522001B1C68 /* PasswordTextField.swift */,
 				1F894BE72BFF4A4300106B66 /* ImagePickerImageView.swift */,
+				1FCCAE7B2C0067B400AB0A56 /* CustomNavigationBar.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				1F894BE62BFF471300106B66 /* ActivityButton.swift in Sources */,
 				1F0646522BFB7689001B1C68 /* ViewController.swift in Sources */,
 				1F0646402BFB5B22001B1C68 /* UIViewController+Extension.swift in Sources */,
+				1FCCAE7C2C0067B400AB0A56 /* CustomNavigationBar.swift in Sources */,
 				1F0646452BFB5B31001B1C68 /* RestrictCharacter.swift in Sources */,
 				1F470E6C2BFC647F001C79AF /* TabBarController.swift in Sources */,
 				1F06464E2BFB73E0001B1C68 /* SignupVC.swift in Sources */,
