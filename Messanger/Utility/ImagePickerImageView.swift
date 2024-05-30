@@ -39,7 +39,7 @@ class ImagePickerImageView: UIImageView {
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
                 let imagePicker = UIImagePickerController()
                 imagePicker.delegate = self
-                imagePicker.isEditing = true
+                imagePicker.allowsEditing = true
                 imagePicker.sourceType = .camera
                 self.viewController?.present(imagePicker, animated: true, completion: nil)
             } else {
@@ -52,7 +52,6 @@ class ImagePickerImageView: UIImageView {
             config.selectionLimit = 1
             let pickerVC = PHPickerViewController(configuration: config)
             pickerVC.delegate = self
-            pickerVC.isEditing = true
             self.viewController?.present(pickerVC, animated: true)
         }
         

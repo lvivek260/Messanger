@@ -17,7 +17,7 @@ class LoginNav: UINavigationController {
     
 //MARK: - Configurations Functions
     private func backButtonImgConfig(){
-        // Ensure the custom back button image is set
+         // Ensure the custom back button image is set
         navigationBar.backIndicatorImage = .backIcon
         navigationBar.backIndicatorTransitionMaskImage = .backIcon
         navigationBar.tintColor = .lightGreen
